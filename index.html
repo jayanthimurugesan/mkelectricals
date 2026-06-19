@@ -74,6 +74,36 @@
             padding: 30px;
             color: #94a3b8;
         }
+
+        .contact-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-text {
+            flex: 1;
+        }
+
+        .contact-image img {
+            width: 250px;
+            height: 250px;
+            object-fit: contain;
+        }
+
+        /* Mobile view */
+        @media (max-width: 768px) {
+            .contact-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-image img {
+                width: 200px;
+                height: 200px;
+            }
+        }
     </style>
 </head>
 
@@ -174,21 +204,22 @@
 
         <section>
             <h2>Contact</h2>
-            <div class="card">
-                <div>
-                    <p>M/S M.K.ELECTRICALS</p>
+
+            <div class="card contact-card">
+                <div class="contact-text">
+                    <p><strong>M/S M.K.ELECTRICALS</strong></p>
                     <p>32, MK ELECTRICALS, STREET NO 1, PALLADAM ROAD, POLLACHI</p>
                     <p>Coimbatore - 642002</p>
-                    <p>TamilNadu</p>
+                    <p>Tamil Nadu</p>
                     <p>Email: vmmuthu16@gmail.com</p>
-                    <p>91 09894061116, 919994438735</p>
+                    <p>+91 98940 61116, +91 99944 38735</p>
                 </div>
-                <div class="card">
-                    <img src="images/Location.png" alt="Location" style="width: 250px; height: 250px;">
+
+                <div class="contact-image">
+                    <img src="images/Location.png" alt="Location">
                 </div>
             </div>
         </section>
-
         <footer>
             © 2026 M K Electricals. All Rights Reserved.
         </footer>
