@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.logo {
+    width: 100%;
+    max-width: 914px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 body {
     font-family: Segoe UI, Arial, sans-serif;
     background: #0f172a;
