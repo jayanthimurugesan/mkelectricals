@@ -1,2 +1,4 @@
 # mkelectricals
 https://business.facebook.com/latest/settings/security_center?business_id=1447457250518023
+
+I purchased 'https://mkelectricals.co.in' from GoDaddy. I created a website and saved in a repo in github 'https://jayanthimurugesan.github.io/mkelectricals/'. GoDaddy is not yet published. I able to view the site with 'Launching Soon' message. When I try to publish from GoDaddy it shows the msg 'Uh oh, something went wrong. Please try again or contact GoDaddy Guides at 480-463-8333.' I try to change the custom domain as https://mkelectricals.co.in/ in git it shows the same. how to redirect my own page
