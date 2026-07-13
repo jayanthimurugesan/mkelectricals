@@ -92,6 +92,26 @@ footer {
 }
 
 /* Mobile view */
+
+/* Product image styling */
+.product-img {
+    width: 184px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* WhatsApp text styling */
+.whatsapp-text {
+    color: #0d9488;
+}
+
+/* WhatsApp link styling */
+.whatsapp-link {
+    color: #8400ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .contact-card {
         flex-direction: column;
@@ -117,7 +137,7 @@ footer {
     display: flex;
     gap: 1.5rem;
     width: max-content;
-    animation: scrollBanner 35s linear infinite;
+    animation: scrollBanner 120s linear infinite;
 }
 
 .banner-track img {
@@ -141,8 +161,14 @@ footer {
     }
 
     100% {
-        transform: translateX(-10%);
+        transform: translateX(-50%);
     }
 }
 
 /* ---- End Moving Banner ---- */
+
+/* GoogleLink */
+.google_link {
+    text-align: center;
+    margin-top: 10px;
+}
