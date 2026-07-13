@@ -4,55 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* ---- Moving Banner / Marquee ---- */
-        .banner-wrapper {
-            width: 100%;
-            overflow: hidden;
-            background: rgba(255, 183, 3, 0.08);
-            border-bottom: 1px solid rgba(255, 183, 3, 0.15);
-            padding: 0.5rem 0;
-        }
-
-        .banner-track {
-            display: flex;
-            gap: 1.5rem;
-            width: max-content;
-            animation: scrollBanner 35s linear infinite;
-        }
-
-        .banner-track img {
-            height: 110px;
-            width: 160px;
-            object-fit: cover;
-            border-radius: 0.5rem;
-            flex-shrink: 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .banner-track img:hover {
-            transform: scale(1.08);
-            box-shadow: 0 6px 20px rgba(255, 183, 3, 0.35);
-        }
-
-        @keyframes scrollBanner {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        /* ---- End Moving Banner ---- */
-    </style>
     <title>M K Electricals</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/png" href="images/icon32.png" sizes="32x32">
 </head>
-<!-- https://vercel.com/jayanthimurugesans-projects/mkelectricals -->
 
 <body>
     <div class="container">
