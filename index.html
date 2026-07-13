@@ -4,6 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* ---- Moving Banner / Marquee ---- */
+        .banner-wrapper {
+            width: 100%;
+            overflow: hidden;
+            background: rgba(255, 183, 3, 0.08);
+            border-bottom: 1px solid rgba(255, 183, 3, 0.15);
+            padding: 0.5rem 0;
+        }
+
+        .banner-track {
+            display: flex;
+            gap: 1.5rem;
+            width: max-content;
+            animation: scrollBanner 35s linear infinite;
+        }
+
+        .banner-track img {
+            height: 110px;
+            width: 160px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .banner-track img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 20px rgba(255, 183, 3, 0.35);
+        }
+
+        @keyframes scrollBanner {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* ---- End Moving Banner ---- */
+    </style>
     <title>M K Electricals</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/png" href="images/icon32.png" sizes="32x32">
@@ -11,8 +55,46 @@
 <!-- https://vercel.com/jayanthimurugesans-projects/mkelectricals -->
 
 <body>
-
     <div class="container">
+        <!-- Moving Banner with 12 Electrical Domain Images -->
+        <div class="banner-wrapper">
+            <div class="container">
+                <div class="banner-track">
+                    <img src="images/001.webp" alt="Stabilizer" />
+                    <img src="images/002.webp" alt="Stabilizer" />
+                    <img src="images/003.webp" alt="Stabilizer" />
+                    <img src="images/004.webp" alt="Stabilizer" />
+                    <img src="images/005.webp" alt="Stabilizer" />
+                    <img src="images/006.webp" alt="Stabilizer" />
+                    <img src="images/007.png" alt="Stabilizer" />
+                    <img src="images/008.png" alt="Stabilizer" />
+                    <img src="images/009.png" alt="Stabilizer" />
+                    <img src="images/010.png" alt="Stabilizer" />
+                    <img src="images/011.png" alt="Stabilizer" />
+                    <img src="images/012.png" alt="Stabilizer" />
+                    <img src="images/013.png" alt="Stabilizer" />
+                    <img src="images/014.jpg" alt="Stabilizer" />
+                    <img src="images/015.png" alt="Stabilizer" />
+                    <!-- Duplicate for seamless loop -->
+                    <img src="images/001.webp" alt="Stabilizer" />
+                    <img src="images/002.webp" alt="Stabilizer" />
+                    <img src="images/003.webp" alt="Stabilizer" />
+                    <img src="images/004.webp" alt="Stabilizer" />
+                    <img src="images/005.webp" alt="Stabilizer" />
+                    <img src="images/006.webp" alt="Stabilizer" />
+                    <img src="images/007.png" alt="Stabilizer" />
+                    <img src="images/008.png" alt="Stabilizer" />
+                    <img src="images/009.png" alt="Stabilizer" />
+                    <img src="images/010.png" alt="Stabilizer" />
+                    <img src="images/011.png" alt="Stabilizer" />
+                    <img src="images/012.png" alt="Stabilizer" />
+                    <img src="images/013.png" alt="Stabilizer" />
+                    <img src="images/014.jpg" alt="Stabilizer" />
+                    <img src="images/015.png" alt="Stabilizer" />
+                </div>
+            </div>
+        </div>
+
         <header>
             <img src="images/logo.PNG" alt="logo" class="logo">
             <h1>M K Electricals</h1>
@@ -21,6 +103,7 @@
             </p>
             <a href="mailto:vmmuthu16@gmail.com" class="btn">Contact Us</a>
         </header>
+        <!--  -->
 
         <section>
             <h2>About Us</h2>
